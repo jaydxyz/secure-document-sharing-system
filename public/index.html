@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Document Sharing System</title>
+</head>
+<body>
+    <h1>Secure Document Sharing System</h1>
+    <div id="auth">
+        <h2>Authentication</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="register()">Register</button>
+        <button onclick="login()">Login</button>
+    </div>
+    <div id="actions" style="display:none;">
+        <h2>Actions</h2>
+        <button onclick="issueCredential()">Issue Credential</button>
+        <br><br>
+        <input type="text" id="docTitle" placeholder="Document Title">
+        <textarea id="docContent" placeholder="Document Content"></textarea>
+        <button onclick="uploadDocument()">Upload Document</button>
+        <br><br>
+        <input type="number" id="docId" placeholder="Document ID">
+        <button onclick="downloadDocument()">Download Document</button>
+        <br><br>
+        <input type="number" id="shareDocId" placeholder="Document ID">
+        <input type="text" id="shareUsername" placeholder="Username to share with">
+        <button onclick="shareDocument()">Share Document</button>
+    </div>
+    <div id="result"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
