@@ -1,3 +1,4 @@
+//public/app.js
 let token = '';
 
 function showResult(message) {
