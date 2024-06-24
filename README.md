@@ -19,6 +19,7 @@ This project implements a basic Secure Document Sharing System using Node.js and
 - JSON Web Tokens (JWT) for authentication
 - CryptoJS for document encryption
 - JSON-LD for data structuring
+- Tailwind CSS for styling
 
 ## Setup
 
